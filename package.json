@@ -1,8 +1,10 @@
 {
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "express": "^4.18.2",
     "express-handlebars": "^5.3.5",
-    "nedb": "^1.8.0"
+    "nedb": "^1.8.0",
+    "nodemon": "^2.0.22"
   },
   "name": "lekcja_5",
   "version": "1.0.0",

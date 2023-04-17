@@ -1,0 +1,26 @@
+<nav>
+    <a href="/" class="text-danger text-decoration-none">Cars</a>
+    <a href="/add" class="text-light text-decoration-none">Add</a>
+    <a href="/list" class="text-light text-decoration-none">List</a>
+    <a href="/edit" class="text-light text-decoration-none">Edit</a>
+</nav>
+<h1>add car page</h1>
+<form action="addCar" method="POST" class="ms-5 ">
+    <div class="form-group p-2">
+    {{#if id}}
+    <div class="alert alert-success" role="alert">
+        {{id}}  
+    </div>
+    {{/if}}
+    <input type="checkbox" id="1" name="ubezpieczony" value="ubezpieczony" class="form-check-input">
+    <label for="1"  class="form-check-label"> ubezpieczony</label><br>
+    <input type="checkbox" id="2" name="benzyna" value="benzyna" class="form-check-input">
+    <label for="2"  class="form-check-label"> benzyna</label><br>
+    <input type="checkbox" id="3" name="uszkodzony" value="uszkodzony" class="form-check-input">
+    <label for="3"  class="form-check-label"> uszkodzony</label><br>
+    <input type="checkbox" id="4" name="naped" value="naped" class="form-check-input">
+    <label for="4"  class="form-check-label"> napęd 4x4</label><br>
+    </div>
+    <input type="submit" value="add" class="btn btn-secondary">
+    
+</form>

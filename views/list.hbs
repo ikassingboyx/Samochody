@@ -1,0 +1,26 @@
+<nav>
+    <a href="/" class="text-danger text-decoration-none">Cars</a>
+    <a href="/add" class="text-light text-decoration-none">Add</a>
+    <a href="/list" class="text-light text-decoration-none">List</a>
+    <a href="/edit" class="text-light text-decoration-none">Edit</a>
+</nav>
+<table class="table table-dark table-striped table-hover text-center">
+    <tr>
+        <th scope="col text-secondary">id</th>
+        <th scope="col text-secondary">ubezpieczony</th>
+        <th scope="col text-secondary">benzyna</th>
+        <th scope="col text-secondary">uszkodzony</th>
+        <th scope="col text-secondary">napęd 4x4</th>
+        <th scope="col text-secondary">Delete</th>
+  </tr>
+{{#docs}}
+    <tr>
+        <td>{{this._id}}</td>
+        <td>{{formatBool this.ubezpieczony}}</td>
+        <td>{{formatBool this.benzyna}}</td>
+        <td>{{formatBool this.uszkodzony}}</td>
+        <td>{{formatBool this.naped}}</td>
+        <td><a value="{{ this._id }}" id="{{ this._id }}" onclick="handleDelete('{{this._id}}')" class="btn btn-danger">Delete</a></td>
+  </tr>
+{{/docs}}
+</table>
